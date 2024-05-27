@@ -1,5 +1,10 @@
-print("I'm adding two numbers")
-num = 10 + 3
-print(num)
+import random
 
-print("I'm a robot")
+random.seed(2100)
+
+def my_func(x):
+    return sum(x) / len(x)
+
+ab = [random.random() for _ in range(11)]
+
+print(my_func(ab))
